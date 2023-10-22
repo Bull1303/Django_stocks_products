@@ -1,0 +1,5 @@
+#!bin/bash/expect
+spawn home/denis/Django_stocks_products/deploy.sh
+expect "password"
+send -- "$env(PASSWORD)\r"
+expect eof
